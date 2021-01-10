@@ -40,6 +40,19 @@ Returns all the binary data (all keys) of the item which gets currently processe
 
 Sets all the binary data (all keys) of the item which gets currently processed.
 
+Example of a binary data object containing one key named `n8nGreetingData`:
+
+```javascript
+const binaryKeyData = {
+  n8nGreetingData: {
+    data: "SGVsbG8gbjhu", // "Hello n8n", base64 encoded
+    mimeType: "text/plain",
+    fileName: "greeting", // optional
+    fileExtension: "txt" // optional
+  }
+}
+setBinaryData(binaryKeyData);
+```
 
 ### Method: getWorkflowStaticData(type)
 
